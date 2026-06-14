@@ -40,14 +40,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Contact form handling (only on contact page)
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Merci pour votre message ! Nous vous recontacterons rapidement.');
-            contactForm.reset();
-        });
+    // Contact form handling (only on contact page, NOT on admin pages)
+    const pageUrl = window.location.pathname;
+    if (!pageUrl.includes('login') && !pageUrl.includes('admin')) {
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Merci pour votre message ! Nous vous recontacterons rapidement.');
+                contactForm.reset();
+            });
+        }
     }
 
     // Smooth scroll for anchor links
