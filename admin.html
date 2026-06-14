@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panneau Admin - FC Inclusif</title>
+    <link rel="icon" type="image/jpeg" href="logo-club.jpg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo-section">
+                <div class="logo-image">
+                    <img src="logo-club.jpg" alt="Logo FC Inclusif">
+                </div>
+                <div class="logo-text">
+                    <h1>FC Inclusif</h1>
+                    <p>Admin</p>
+                </div>
+            </a>
+            
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="admin.html" class="nav-link active">Panneau Admin</a></li>
+                    <li><a href="#" id="logoutBtn" class="nav-link">Déconnexion</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <nav class="nav-mobile" id="nav-mobile">
+            <ul>
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="admin.html" class="nav-link">Panneau Admin</a></li>
+                <li><a href="#" id="logoutBtnMobile" class="nav-link">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="admin-section">
+            <h2>Panneau d'Administration</h2>
+            
+            <!-- Tabs Navigation -->
+            <div class="admin-tabs">
+                <button class="admin-tab active" data-tab="matchs">⚽ Gérer Matchs</button>
+                <button class="admin-tab" data-tab="actualites">📰 Gérer Actualités</button>
+            </div>
+
+            <!-- Matchs Tab -->
+            <div id="matchs-tab" class="admin-tab-content active">
+                <h3>Gestion des Matchs</h3>
+                
+                <form id="matchForm" class="admin-form">
+                    <h4>Ajouter un nouveau match</h4>
+                    
+                    <div class="form-group">
+                        <label for="matchDate">Date</label>
+                        <input type="date" id="matchDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="matchTime">Heure</label>
+                        <input type="time" id="matchTime" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="matchTeam">Équipes (ex: FC Inclusif vs AS Sporting)</label>
+                        <input type="text" id="matchTeam" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="matchLocation">Lieu</label>
+                        <input type="text" id="matchLocation" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="matchType">Type</label>
+                        <select id="matchType" required>
+                            <option value="Amical">Amical</option>
+                            <option value="Ligue Amateur">Ligue Amateur</option>
+                            <option value="Tournoi">Tournoi</option>
+                            <option value="Préparation">Préparation</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="matchStatus">Statut</label>
+                        <select id="matchStatus" required>
+                            <option value="À venir">À venir</option>
+                            <option value="En cours">En cours</option>
+                            <option value="Terminé">Terminé</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="matchResult">Résultat (optionnel, si terminé)</label>
+                        <input type="text" id="matchResult" placeholder="ex: 2-1">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Ajouter le match</button>
+                </form>
+
+                <div id="matchesList" class="admin-list">
+                    <h4>Liste des matchs</h4>
+                    <div id="matchesContainer"></div>
+                </div>
+            </div>
+
+            <!-- Actualités Tab -->
+            <div id="actualites-tab" class="admin-tab-content">
+                <h3>Gestion des Actualités</h3>
+                
+                <form id="newsForm" class="admin-form">
+                    <h4>Ajouter une nouvelle actualité</h4>
+                    
+                    <div class="form-group">
+                        <label for="newsDate">Date</label>
+                        <input type="date" id="newsDate" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newsTitle">Titre</label>
+                        <input type="text" id="newsTitle" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newsContent">Contenu</label>
+                        <textarea id="newsContent" required style="min-height: 150px;"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Ajouter l'actualité</button>
+                </form>
+
+                <div id="newsList" class="admin-list">
+                    <h4>Liste des actualités</h4>
+                    <div id="newsContainer"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>FC Inclusif</h4>
+                <p>Un club de football ouvert à tous les passionnés, construisant une communauté solidaire et inclusive.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens Rapides</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="matche.html">Matchs</a></li>
+                    <li><a href="actualites.html">Actualités</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📍 Stade Municipal, Avenue des Sportifs, 80000 Amiens</p>
+                <p>📞 +33 3 22 XX XX XX</p>
+                <p>📧 contact@fc-inclusif.fr</p>
+            </div>
+            <div class="footer-section">
+                <h4>Suivez-nous</h4>
+                <p>Retrouvez-nous sur les réseaux sociaux pour les dernières nouvelles.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FC Inclusif. Tous droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
