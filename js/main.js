@@ -53,11 +53,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Smooth scroll for anchor links
+    // Smooth scroll for anchor links (skip empty or invalid anchors)
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            // Skip empty hash or non-anchor links
+            if (href === '#' || href === '' || href.startsWith('#logoutBtn')) {
+                return;
+            }
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const target = document.querySelector(href);
             if (target) {
                 target.scrollIntoView({ behavior: 'smooth' });
             }
