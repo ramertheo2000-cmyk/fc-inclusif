@@ -31,8 +31,11 @@ function handleLogin() {
     const loginForm = document.getElementById('loginForm');
     const loginError = document.getElementById('loginError');
 
+    if (!loginForm) return; // Ensure loginForm exists
+
     loginForm.addEventListener('submit', function(e) {
         e.preventDefault();
+        e.stopPropagation(); // Stop event bubbling
         const password = document.getElementById('password').value;
 
         if (password === ADMIN_PASSWORD) {
@@ -40,12 +43,14 @@ function handleLogin() {
             localStorage.setItem('adminLoginTime', new Date().getTime());
             window.location.href = 'admin.html';
         } else {
-            loginError.style.display = 'block';
-            loginError.textContent = '❌ Mot de passe incorrect';
-            loginError.style.color = '#d32f2f';
+            if (loginError) {
+                loginError.style.display = 'block';
+                loginError.textContent = '❌ Mot de passe incorrect';
+                loginError.style.color = '#d32f2f';
+            }
             document.getElementById('password').value = '';
         }
-    });
+    }, true); // Use capture phase to prevent interference
 }
 
 // Check Admin Access
