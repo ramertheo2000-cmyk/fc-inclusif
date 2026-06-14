@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Contact form handling
-    const contactForm = document.querySelector('form');
+    // Contact form handling (only on contact page)
+    const contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
