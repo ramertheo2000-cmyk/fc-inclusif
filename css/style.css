@@ -337,6 +337,12 @@ header {
     gap: 1.5rem;
 }
 
+.info-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .info-card {
     background: var(--secondary);
     padding: 2rem;
