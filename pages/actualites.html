@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actualités - FC Inclusif</title>
+    <title>Actualités - FC Inclusif Amiens</title>
     <link rel="icon" type="image/jpeg" href="../logo-club.jpg">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header & Navigation -->
     <header>
         <div class="header-container">
             <a href="../index.html" class="logo-section">
@@ -17,74 +17,80 @@
                 </div>
                 <div class="logo-text">
                     <h1>FC Inclusif</h1>
-                    <p>Amiens - Somme</p>
+                    <p>Amiens</p>
                 </div>
             </a>
-            <nav>
+            
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
                 <ul>
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="matchs.html">Matchs</a></li>
-                    <li><a href="actualites.html">Actualités</a></li>
-                    <li><a href="galerie.html">Galerie</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="../index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="matchs.html" class="nav-link">Matchs</a></li>
+                    <li><a href="actualites.html" class="nav-link">Actualités</a></li>
+                    <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
         </div>
+
+        <!-- Mobile Navigation Menu -->
+        <nav class="nav-mobile" id="nav-mobile">
+            <ul>
+                <li><a href="../index.html" class="nav-link">Accueil</a></li>
+                <li><a href="matchs.html" class="nav-link">Matchs</a></li>
+                <li><a href="actualites.html" class="nav-link">Actualités</a></li>
+                <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Main Content -->
     <main>
-        <section id="actualites">
-            <h2>📰 Actualités & Infos</h2>
-            <div class="news-grid">
-                <div class="news-card">
-                    <div class="news-image">📢</div>
-                    <div class="news-content">
-                        <div class="news-meta">
-                            <span class="news-tag">Annonce</span>
-                            <span class="news-date">10 juin 2026</span>
-                        </div>
-                        <h3>Inscriptions 2026-2027 Ouvertes !</h3>
-                        <p>Les inscriptions pour la nouvelle saison sont maintenant ouvertes. Rejoignez FC Inclusif et vivez l'aventure du football amateur dans un excellent cadre.</p>
-                    </div>
-                </div>
+        <section>
+            <h2>Dernières Actualités</h2>
 
-                <div class="news-card">
-                    <div class="news-image">⚽</div>
-                    <div class="news-content">
-                        <div class="news-meta">
-                            <span class="news-tag">Match</span>
-                            <span class="news-date">28 juin 2026</span>
-                        </div>
-                        <h3>Belle Victoire 3-1</h3>
-                        <p>Excellent match hier contre FC Corbie. Nos attaquants étaient inspirés en première mi-temps. Bravo à toute l'équipe pour cette performance collective !</p>
-                    </div>
-                </div>
+            <article class="news-card" style="margin-bottom: 2rem;">
+                <div class="news-date">14 Juin 2026</div>
+                <h3>Bienvenue sur notre nouveau site !</h3>
+                <p>Nous sommes ravis de vous présenter le tout nouveau site officiel de FC Inclusif. Découvrez toutes les informations sur nos activités, nos matchs à venir et rejoignez notre communauté de passionnés de football.</p>
+                <p>Le site vous permet de consulter l'ensemble de nos actualités, notre calendrier de matchs, et de nous contacter pour toute demande d'information.</p>
+            </article>
 
-                <div class="news-card">
-                    <div class="news-image">🔧</div>
-                    <div class="news-content">
-                        <div class="news-meta">
-                            <span class="news-tag">Infos</span>
-                            <span class="news-date">5 juin 2026</span>
-                        </div>
-                        <h3>Rénovation du Terrain</h3>
-                        <p>Les travaux de rénovation du terrain ont débuté. Nous adapterons nos horaires d'entraînement en conséquence. Merci de votre patience !</p>
-                    </div>
-                </div>
+            <article class="news-card" style="margin-bottom: 2rem;">
+                <div class="news-date">12 Juin 2026</div>
+                <h3>Matchs de préparation programmés</h3>
+                <p>Pour cette nouvelle saison, nous organisons plusieurs matchs de préparation afin de renforcer notre cohésion d'équipe. Deux rencontres sont d'ores et déjà programmées contre des clubs partenaires.</p>
+                <p>Ces matchs amicaux nous permettront de tester notre jeu et d'accueillir de nouveaux joueurs avant de débuter la saison officielle.</p>
+            </article>
 
-                <div class="news-card">
-                    <div class="news-image">🏆</div>
-                    <div class="news-content">
-                        <div class="news-meta">
-                            <span class="news-tag">Événement</span>
-                            <span class="news-date">2 juin 2026</span>
-                        </div>
-                        <h3>Tournoi Amical en Juillet</h3>
-                        <p>Nous organisons un tournoi amical au mois de juillet avec plusieurs clubs de la région. Une belle opportunité de jouer et de partager des moments conviviaux !</p>
-                    </div>
-                </div>
-            </div>
+            <article class="news-card" style="margin-bottom: 2rem;">
+                <div class="news-date">10 Juin 2026</div>
+                <h3>Rejoignez nos entraînements</h3>
+                <p>Vous souhaitez vous inscrire à FC Inclusif ? Nos entraînements se déroulent régulièrement tout au long de la semaine. Nous accueillons tous les passionnés de football, quel que soit votre niveau.</p>
+                <p>Contactez-nous pour connaître les conditions d'accès et les horaires exacts de nos séances d'entraînement.</p>
+            </article>
+
+            <article class="news-card" style="margin-bottom: 2rem;">
+                <div class="news-date">5 Juin 2026</div>
+                <h3>Ambiance festive lors du dernier entraînement</h3>
+                <p>L'ambiance était au rendez-vous lors de notre dernier entraînement du mois de mai. Une trentaine de joueurs s'étaient réunis pour célébrer ensemble la fin du mois et partager un moment convivial après la séance.</p>
+                <p>Décourez les photos de cet événement dans notre galerie et partagez vos souvenirs du club !</p>
+            </article>
+
+            <article class="news-card">
+                <div class="news-date">1 Juin 2026</div>
+                <h3>Retour des beaux jours : nouvelle saison sportive</h3>
+                <p>Avec l'arrivée de l'été, nos activités reprennent de plus belle. Les entraînements sont intensifiés et les matchs amicaux se multiplient pour préparer au mieux la prochaine saison.</p>
+                <p>N'hésitez pas à nous rejoindre pour vivre des moments uniques en compagnie des autres membres du club.</p>
+            </article>
         </section>
     </main>
 
@@ -92,38 +98,31 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>À Propos</h3>
-                <p>FC Inclusif est un club de football amateur basé à Amiens, dédié à promouvoir le football pour tous les niveaux et tous les âges.</p>
+                <h4>FC Inclusif</h4>
+                <p>Un club de football ouvert à tous les passionnés, construisant une communauté solidaire et inclusive.</p>
             </div>
             <div class="footer-section">
-                <h3>Navigation</h3>
+                <h4>Liens Rapides</h4>
                 <ul>
                     <li><a href="../index.html">Accueil</a></li>
                     <li><a href="matchs.html">Matchs</a></li>
                     <li><a href="actualites.html">Actualités</a></li>
                     <li><a href="galerie.html">Galerie</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Entraînements</h3>
-                <ul>
-                    <li>Lundi 20h30</li>
-                    <li>Mercredi 20h30</li>
-                    <li>Samedi 15h00</li>
-                </ul>
+                <h4>Contact</h4>
+                <p>📍 Stade Municipal, Avenue des Sportifs, 80000 Amiens</p>
+                <p>📞 +33 3 22 XX XX XX</p>
+                <p>📧 contact@fc-inclusif.fr</p>
             </div>
             <div class="footer-section">
-                <h3>Réseaux</h3>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Email</a></li>
-                </ul>
+                <h4>Suivez-nous</h4>
+                <p>Retrouvez-nous sur les réseaux sociaux pour les dernières nouvelles.</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2026 FC Inclusif. Tous droits réservés • <a href="#" style="color: rgba(255,255,255,0.6);">Mentions légales</a> • <a href="#" style="color: rgba(255,255,255,0.6);">RGPD</a></p>
+            <p>&copy; 2026 FC Inclusif. Tous droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
         </div>
     </footer>
 

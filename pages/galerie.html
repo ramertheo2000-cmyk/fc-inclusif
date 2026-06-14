@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie - FC Inclusif</title>
+    <title>Galerie - FC Inclusif Amiens</title>
     <link rel="icon" type="image/jpeg" href="../logo-club.jpg">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header & Navigation -->
     <header>
         <div class="header-container">
             <a href="../index.html" class="logo-section">
@@ -17,35 +17,84 @@
                 </div>
                 <div class="logo-text">
                     <h1>FC Inclusif</h1>
-                    <p>Amiens - Somme</p>
+                    <p>Amiens</p>
                 </div>
             </a>
-            <nav>
+            
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
                 <ul>
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="matchs.html">Matchs</a></li>
-                    <li><a href="actualites.html">Actualités</a></li>
-                    <li><a href="galerie.html">Galerie</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="../index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="matchs.html" class="nav-link">Matchs</a></li>
+                    <li><a href="actualites.html" class="nav-link">Actualités</a></li>
+                    <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
         </div>
+
+        <!-- Mobile Navigation Menu -->
+        <nav class="nav-mobile" id="nav-mobile">
+            <ul>
+                <li><a href="../index.html" class="nav-link">Accueil</a></li>
+                <li><a href="matchs.html" class="nav-link">Matchs</a></li>
+                <li><a href="actualites.html" class="nav-link">Actualités</a></li>
+                <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Main Content -->
     <main>
-        <section id="galerie">
-            <h2>🎞️ Galerie Photos</h2>
+        <section>
+            <h2>Galerie Photos</h2>
+            <p style="color: var(--text-light); margin-bottom: 2rem;">Découvrez les moments forts de notre club à travers nos photos d'entraînements et de matchs.</p>
+
             <div class="gallery-grid">
-                <div class="gallery-item">📸</div>
-                <div class="gallery-item">📸</div>
-                <div class="gallery-item">📸</div>
-                <div class="gallery-item">📸</div>
-                <div class="gallery-item">📸</div>
-                <div class="gallery-item">📸</div>
-                <div class="gallery-item">📸</div>
-                <div class="gallery-item">📸</div>
-                <div class="gallery-item">📸</div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">📸</div>
+                    <p>Entraînement Lundi 10 Juin</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">📸</div>
+                    <p>Match Amical 8 Juin</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">📸</div>
+                    <p>Séance Mercredi 5 Juin</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">📸</div>
+                    <p>Entraînement Samedi 1 Juin</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">📸</div>
+                    <p>Match Friendly 30 Mai</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">📸</div>
+                    <p>Entraînement Collectif 28 Mai</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">📸</div>
+                    <p>Séance Spéciale Défense</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">📸</div>
+                    <p>Match du Mois de Mai</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">📸</div>
+                    <p>Ambiance du Club</p>
+                </div>
             </div>
         </section>
     </main>
@@ -54,40 +103,82 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>À Propos</h3>
-                <p>FC Inclusif est un club de football amateur basé à Amiens, dédié à promouvoir le football pour tous les niveaux et tous les âges.</p>
+                <h4>FC Inclusif</h4>
+                <p>Un club de football ouvert à tous les passionnés, construisant une communauté solidaire et inclusive.</p>
             </div>
             <div class="footer-section">
-                <h3>Navigation</h3>
+                <h4>Liens Rapides</h4>
                 <ul>
                     <li><a href="../index.html">Accueil</a></li>
                     <li><a href="matchs.html">Matchs</a></li>
                     <li><a href="actualites.html">Actualités</a></li>
                     <li><a href="galerie.html">Galerie</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Entraînements</h3>
-                <ul>
-                    <li>Lundi 20h30</li>
-                    <li>Mercredi 20h30</li>
-                    <li>Samedi 15h00</li>
-                </ul>
+                <h4>Contact</h4>
+                <p>📍 Stade Municipal, Avenue des Sportifs, 80000 Amiens</p>
+                <p>📞 +33 3 22 XX XX XX</p>
+                <p>📧 contact@fc-inclusif.fr</p>
             </div>
             <div class="footer-section">
-                <h3>Réseaux</h3>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Email</a></li>
-                </ul>
+                <h4>Suivez-nous</h4>
+                <p>Retrouvez-nous sur les réseaux sociaux pour les dernières nouvelles.</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2026 FC Inclusif. Tous droits réservés • <a href="#" style="color: rgba(255,255,255,0.6);">Mentions légales</a> • <a href="#" style="color: rgba(255,255,255,0.6);">RGPD</a></p>
+            <p>&copy; 2026 FC Inclusif. Tous droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
         </div>
     </footer>
+
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item {
+            background: var(--secondary);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .gallery-item:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .gallery-placeholder {
+            background: var(--hover);
+            padding: 3rem 1rem;
+            font-size: 3rem;
+        }
+
+        .gallery-item p {
+            padding: 1rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 1rem;
+            }
+
+            .gallery-placeholder {
+                padding: 2rem 0.5rem;
+                font-size: 2rem;
+            }
+        }
+    </style>
 
     <script src="../js/main.js"></script>
 </body>

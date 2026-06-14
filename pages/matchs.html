@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matchs - FC Inclusif</title>
+    <title>Matchs - FC Inclusif Amiens</title>
     <link rel="icon" type="image/jpeg" href="../logo-club.jpg">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header & Navigation -->
     <header>
         <div class="header-container">
             <a href="../index.html" class="logo-section">
@@ -17,85 +17,92 @@
                 </div>
                 <div class="logo-text">
                     <h1>FC Inclusif</h1>
-                    <p>Amiens - Somme</p>
+                    <p>Amiens</p>
                 </div>
             </a>
-            <nav>
+            
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <nav class="nav-desktop">
                 <ul>
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="matchs.html">Matchs</a></li>
-                    <li><a href="actualites.html">Actualités</a></li>
-                    <li><a href="galerie.html">Galerie</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="../index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="matchs.html" class="nav-link">Matchs</a></li>
+                    <li><a href="actualites.html" class="nav-link">Actualités</a></li>
+                    <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
         </div>
+
+        <!-- Mobile Navigation Menu -->
+        <nav class="nav-mobile" id="nav-mobile">
+            <ul>
+                <li><a href="../index.html" class="nav-link">Accueil</a></li>
+                <li><a href="matchs.html" class="nav-link">Matchs</a></li>
+                <li><a href="actualites.html" class="nav-link">Actualités</a></li>
+                <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Main Content -->
     <main>
-        <section id="matchs">
-            <h2>🏟️ Calendrier des Matchs</h2>
-            <div class="matches-container">
-                <div class="match-card">
-                    <div class="match-date">
-                        <div class="day">15</div>
-                        <div class="month">Juil</div>
+        <section class="matches-section">
+            <h2>Calendrier des Matchs</h2>
+            
+            <h3 style="color: var(--primary); font-size: 1.3rem; margin-top: 2rem; margin-bottom: 1.5rem;">Matchs à venir</h3>
+            
+            <div class="match-card">
+                <div class="match-info">
+                    <h3>FC Inclusif vs AS Sporting</h3>
+                    <div class="match-details">
+                        📅 20 Juin 2026 | ⏰ 19:00 | 📍 Stade Municipal
                     </div>
-                    <div class="match-info">
-                        <h3>FC Amiens B</h3>
-                        <p>📍 Stade Municipal</p>
-                        <p>🕐 20h30 • Ligue Amateur</p>
-                    </div>
-                    <div class="match-status">
-                        <span class="badge badge-upcoming">À venir</span>
-                    </div>
+                    <p style="margin-top: 0.5rem; color: var(--text-lighter); font-size: 0.9rem;">Amical - Tous niveaux</p>
                 </div>
+                <span class="match-status status-upcoming">À venir</span>
+            </div>
 
-                <div class="match-card">
-                    <div class="match-date">
-                        <div class="day">22</div>
-                        <div class="month">Juil</div>
+            <div class="match-card">
+                <div class="match-info">
+                    <h3>US Péronne vs FC Inclusif</h3>
+                    <div class="match-details">
+                        📅 27 Juin 2026 | ⏰ 18:00 | 📍 Stade de Péronne
                     </div>
-                    <div class="match-info">
-                        <h3>AS Abbeville</h3>
-                        <p>📍 Stade de la Vallée</p>
-                        <p>🕐 15h00 • Ligue Amateur</p>
-                    </div>
-                    <div class="match-status">
-                        <span class="badge badge-upcoming">À venir</span>
-                    </div>
+                    <p style="margin-top: 0.5rem; color: var(--text-lighter); font-size: 0.9rem;">Amical - Tous niveaux</p>
                 </div>
+                <span class="match-status status-upcoming">À venir</span>
+            </div>
 
-                <div class="match-card past">
-                    <div class="match-date">
-                        <div class="day">28</div>
-                        <div class="month">Juin</div>
-                    </div>
-                    <div class="match-info">
-                        <h3>FC Corbie</h3>
-                        <p>📍 Stade Municipal</p>
-                        <p>🕐 20h30 • Ligue Amateur</p>
-                    </div>
-                    <div class="match-status">
-                        <div class="result">3 - 1</div>
-                    </div>
-                </div>
+            <h3 style="color: var(--primary); font-size: 1.3rem; margin-top: 2.5rem; margin-bottom: 1.5rem;">Matchs précédents</h3>
 
-                <div class="match-card past">
-                    <div class="match-date">
-                        <div class="day">21</div>
-                        <div class="month">Juin</div>
+            <div class="match-card">
+                <div class="match-info">
+                    <h3>FC Inclusif 3 - 2 Amiens FC</h3>
+                    <div class="match-details">
+                        📅 15 Juin 2026 | 📍 Stade Municipal
                     </div>
-                    <div class="match-info">
-                        <h3>US Camon</h3>
-                        <p>📍 Stade du Parc</p>
-                        <p>🕐 15h00 • Ligue Amateur</p>
-                    </div>
-                    <div class="match-status">
-                        <div class="result">2 - 2</div>
-                    </div>
+                    <p style="margin-top: 0.5rem; color: var(--text-lighter); font-size: 0.9rem;">Amical</p>
                 </div>
+                <span class="match-status status-past">Terminé</span>
+            </div>
+
+            <div class="match-card">
+                <div class="match-info">
+                    <h3>RC Amiens 1 - 1 FC Inclusif</h3>
+                    <div class="match-details">
+                        📅 8 Juin 2026 | 📍 Stade Lafleur
+                    </div>
+                    <p style="margin-top: 0.5rem; color: var(--text-lighter); font-size: 0.9rem;">Amical</p>
+                </div>
+                <span class="match-status status-past">Terminé</span>
             </div>
         </section>
     </main>
@@ -104,38 +111,31 @@
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h3>À Propos</h3>
-                <p>FC Inclusif est un club de football amateur basé à Amiens, dédié à promouvoir le football pour tous les niveaux et tous les âges.</p>
+                <h4>FC Inclusif</h4>
+                <p>Un club de football ouvert à tous les passionnés, construisant une communauté solidaire et inclusive.</p>
             </div>
             <div class="footer-section">
-                <h3>Navigation</h3>
+                <h4>Liens Rapides</h4>
                 <ul>
                     <li><a href="../index.html">Accueil</a></li>
                     <li><a href="matchs.html">Matchs</a></li>
                     <li><a href="actualites.html">Actualités</a></li>
                     <li><a href="galerie.html">Galerie</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Entraînements</h3>
-                <ul>
-                    <li>Lundi 20h30</li>
-                    <li>Mercredi 20h30</li>
-                    <li>Samedi 15h00</li>
-                </ul>
+                <h4>Contact</h4>
+                <p>📍 Stade Municipal, Avenue des Sportifs, 80000 Amiens</p>
+                <p>📞 +33 3 22 XX XX XX</p>
+                <p>📧 contact@fc-inclusif.fr</p>
             </div>
             <div class="footer-section">
-                <h3>Réseaux</h3>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Email</a></li>
-                </ul>
+                <h4>Suivez-nous</h4>
+                <p>Retrouvez-nous sur les réseaux sociaux pour les dernières nouvelles.</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2026 FC Inclusif. Tous droits réservés • <a href="#" style="color: rgba(255,255,255,0.6);">Mentions légales</a> • <a href="#" style="color: rgba(255,255,255,0.6);">RGPD</a></p>
+            <p>&copy; 2026 FC Inclusif. Tous droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
         </div>
     </footer>
 
